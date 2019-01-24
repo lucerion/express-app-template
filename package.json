@@ -1,0 +1,14 @@
+{
+  "name": "express-app-template",
+  "version": "0.0.1",
+  "description": "Express app template",
+  "repository": "https://github.com/lucerion/express-app-template",
+  "license": "BSD-3-Clause",
+  "author": "Alexander Skachko <alexander.skachko@gmail.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

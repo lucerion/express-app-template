@@ -6,10 +6,12 @@
   "license": "BSD-3-Clause",
   "author": "Alexander Skachko <alexander.skachko@gmail.com>",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "linter": "eslint ."
   },
   "dependencies": {
     "dotenv": "^6.2.0",
+    "eslint": "^5.13.0",
     "express": "^4.16.4"
   }
 }

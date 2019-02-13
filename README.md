@@ -13,4 +13,4 @@
 
 ## Linter
 
-    yarn linter
+    yarn lint

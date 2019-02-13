@@ -7,7 +7,7 @@
   "author": "Alexander Skachko <alexander.skachko@gmail.com>",
   "scripts": {
     "start": "node src/server.js",
-    "linter": "eslint ."
+    "lint": "eslint ."
   },
   "dependencies": {
     "dotenv": "^6.2.0",

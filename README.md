@@ -2,10 +2,9 @@
 
 Packages:
 
-* [express](https://expressjs.com) - Node.js web application framework
-* [dotenv](https://www.npmjs.com/package/dotenv) - module that loads environment variables from a .env file
-    into process.env
-* [eslint](https://www.npmjs.com/package/eslint) - linter
+* [express](https://expressjs.com)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [ESlint](https://www.npmjs.com/package/eslint)
 
 
 ## Installation

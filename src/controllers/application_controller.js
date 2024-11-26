@@ -1,5 +1,8 @@
-const path = require('path');
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
 
-const index = (req, res) => res.sendFile(path.joins(__dirname, '..', 'views', 'application', 'index.html'));
+const filename = fileURLToPath(import.meta.url);
 
-module.exports = { index };
+const index = (req, res) => res.sendFile(join(dirname(filename), '..', 'views', 'application', 'index.html'));
+
+export default { index };

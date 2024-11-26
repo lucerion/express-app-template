@@ -1,3 +1,3 @@
-const ApplicationController = require('./application_controller');
+import ApplicationController from './application_controller.js';
 
-module.exports = { ApplicationController };
+export { ApplicationController };

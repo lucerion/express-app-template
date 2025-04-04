@@ -9,9 +9,9 @@ Packages
 ## Setup
 
 * [Install Docker](https://docs.docker.com/get-started/get-docker) on your machine.
-* Build image `docker build -t express-app-template .`
-* Run application `docker run -p 3000:3000 express-app-template`
-* Open [http://localhost:8000](http://localhost:3000) in your browser.
+* Create `.env` file (see [.env.example](.env.example)) and edit it.
+* Build image and run application `docker compose up --build`
+* Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## License
 

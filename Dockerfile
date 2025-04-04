@@ -1,14 +1,17 @@
-from node:22-bullseye
+ARG NODE_VERSION
+ARG YARN_VERSION
 
-ARG DEV_PACKAGES="yarn"
+FROM node:${NODE_VERSION}-slim
 
-RUN apt-get update -qq && \
-    apt-get install -yq --no-install-recommends $DEV_PACKAGES
+RUN corepack disable \
+    && npm install -g yarn@${YARN_VERSION}
 
-WORKDIR /express-app-template
+WORKDIR /app
 
-COPY . .
+COPY package.json yarn.lock ./
 
 RUN yarn install
+
+COPY . .
 
 CMD ["yarn", "start"]
